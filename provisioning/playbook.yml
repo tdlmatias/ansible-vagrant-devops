@@ -7,3 +7,19 @@
       apt_repository:
         repo: 'ppa:ondrej/php'
         update_cache: yes
+
+    - name: Install PHP CLI
+      apt:
+        name: php7.1-cli
+
+    - name: Install Nginx web server
+      become: true
+      apt:
+        name: nginx
+        state: latest
+
+    - name: Install MySQL DB server
+      become: true
+      apt:
+        name: mysql-server
+        state: latest
