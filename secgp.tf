@@ -5,7 +5,7 @@ resource  "aws_security_group" "wbc-preprod" {
         from_port    = 22
         to_port      = 22
         protocol     = "tcp"
-        cidr_blocks  = ["90.240.81.140/32","149.90.45.76/32"]
+        cidr_blocks  = ["xx.xxx.xx.xxx/32","xxx.xx.xx.xx/32"]
 
     }
 
