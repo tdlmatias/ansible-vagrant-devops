@@ -1,5 +1,6 @@
 provider "aws" {
-    region = "eu-west-1"
+    region = "${var.region}"
+    shared_credentials_file = "${var.shared_cred_file}"
     profile = "wetekdev"
 }
 
