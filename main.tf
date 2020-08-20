@@ -6,4 +6,8 @@ provider "aws" {
 resource "aws_instance" "wbc-preprod" {
     ami            = "ami-01b282b0f06ba5fd2"
     instance_type  = "t2.large"
+
+    tags = {
+        Name = "wbc-preprod"
+    }
 }
